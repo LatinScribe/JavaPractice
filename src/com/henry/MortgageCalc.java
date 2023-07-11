@@ -1,3 +1,13 @@
+/*
+Author: Henry "TJ" Chen
+Last modified: July 10, 2023
+
+Calculates the users monthly mortgage payment in the following manner:
+Given the principle (how much in total is owed), the YEARLY interest on
+the mortgage, and the period of the mortgage, returns the amount which
+must be paid each month
+ */
+
 package com.henry;
 
 import java.text.NumberFormat;
@@ -24,5 +34,7 @@ public class MortgageCalc {
                 (Math.pow((1 + mon_rate), (12.0f * period)) - 1));
         // display the result
         System.out.println("Mortgage (per month): " + currency.format(monthly_payment));
+
+
     }
 }
