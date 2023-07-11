@@ -11,9 +11,12 @@ import java.util.Scanner;
 
 public class FizzBuzz {
     public static void main(String[] args) {
+
+        // get user's number of choice
         System.out.print("Number: ");
         int user_number = new Scanner(System.in).nextInt();
 
+        // repetition of checking condition, but avoids nesting
         if (user_number % 3 == 0 && user_number % 5 == 0)
             System.out.println("FizzBuzz");
         else if (user_number % 3 == 0 )
